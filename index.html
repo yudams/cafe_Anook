@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카페아눅(Anook)</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variable.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/scroll.css">
+    <!-- pretendard -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <!-- jQuerry -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/index.js"></script>
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <header class="pc">
+        <div class="commonFrame">
+            <h1 class="logo">
+                <a href="./index.html">
+                    <img src="./img/logo_light.svg" alt="Anook 로고">
+                </a>
+            </h1>
+            <ul class="gnb">
+                <li>
+                    <a href="#">카페 Anook 소개</a>
+                    <ul>
+                        <li><a href="#">카페 Anook</a></li>
+                        <li><a href="#">매장</a></li>
+                        <li><a href="#">브랜드 브로슈어</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./story_coffee.html">메뉴이야기</a>
+                    <ul>
+                        <li><a href="./story_coffee.html">커피이야기</a></li>
+                        <li><a href="#">디저트이야기</a></li>
+                        <li><a href="#">델리이야기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">브랜드 지원</a>
+                    <ul>
+                        <li><a href="#">아눅 페어링 플랜트</a></li>
+                        <li><a href="#">아눅 디저트 플랜트</a></li>
+                        <li><a href="#">C&D센터</a></li>
+                        <li><a href="#">SEP센터</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">가맹점 창업안내</a>
+                    <ul>
+                        <li><a href="#">가맹점 개설안내</a></li>
+                        <li><a href="#">창업설명회</a></li>
+                        <li><a href="#">온라인 창업상담신청</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">가맹점 전용 금융상품</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">새소식 & 공지</a>
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="header_mobile mo">
+        <h1 class="logo_mo">
+            <a href="./index.html">
+                <img src="./img/logo_light.svg" alt="카페Anook light 로고">
+            </a>
+        </h1>
+        <span id="btn_gnb">
+            <img src="./img/icn_bar.svg" alt="메뉴 열기 버튼">
+        </span>
+        <div class="hidden_gnb">
+            <div class="hidden_gnb_top">
+                <h1 class="logo_mo">
+                    <a href="./index.html">
+                        <img src="./img/logo.svg" alt="카페Anook light 로고">
+                    </a>
+                </h1>
+                <span id="btn_close_gnb">
+                    <img src="./img/icn_close.svg" alt="메뉴 닫기 버튼">
+                </span>
+            </div>
+            <section class="gnb_mo_wrap">
+                <ul class="gnb_mo">
+                    <li>
+                        <a href="#">카페 Anook 소개</a>
+                        <ul>
+                            <li><a href="#">카페 Anook</a></li>
+                            <li><a href="#">매장</a></li>
+                            <li><a href="#">브랜드 브로슈어</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./story_coffee.html">메뉴이야기</a>
+                        <ul>
+                            <li><a href="./story_coffee.html">커피이야기</a></li>
+                            <li><a href="#">디저트이야기</a></li>
+                            <li><a href="#">델리이야기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">브랜드 지원</a>
+                        <ul>
+                            <li><a href="#">아눅 페어링 플랜트</a></li>
+                            <li><a href="#">아눅 디저트 플랜트</a></li>
+                            <li><a href="#">C&D센터</a></li>
+                            <li><a href="#">SEP센터</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">가맹점 창업안내</a>
+                        <ul>
+                            <li><a href="#">가맹점 개설안내</a></li>
+                            <li><a href="#">창업설명회</a></li>
+                            <li><a href="#">온라인 창업상담신청</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">가맹점 전용 금융상품</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">새소식 & 공지</a>
+                        <ul>
+                            <li><a href="#">공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <div class="hidden_gnb_bottom">
+                <a href="#" class="btn_common big">창업안내 바로가기</a>
+                <ul class="sns">
+                    <li><a href="#" target="_blank">
+                            <img src="./img/sns_youtube_color.svg" alt="유튜브">
+                        </a></li>
+                    <li><a href="#" target="_blank">
+                            <img src="./img/sns_insta_color.svg" alt="인스타">
+                        </a></li>
+                    <li><a href="#" target="_blank">
+                            <img src="./img/sns_X_color.svg" alt="X트위터">
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <div class="swiper station1">
+            <ul class="swiper-wrapper train">
+                <li class="swiper-slide"><img src="./img/banner1.jpg" alt="가을맞이 스페셜 한정 메뉴 출시"></li>
+                <li class="swiper-slide"><img src="./img/banner2.jpg" alt="happy octocer event - 시나몬 츄러스 증정"></li>
+                <li class="swiper-slide"><img src="./img/banner3.jpg" alt="Anook 스탬프 이벤트"></li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-scrollbar"></div>
+    
+        </div>
+        <div class="swiper station2">
+            <ul class="swiper-wrapper train">
+                <li class="swiper-slide"><img src="./img/banner1_m.jpg" alt="가을맞이 스페셜 한정 메뉴 출시"></li>
+                <li class="swiper-slide"><img src="./img/banner2_m.jpg" alt="happy octocer event - 시나몬 츄러스 증정"></li>
+                <li class="swiper-slide"><img src="./img/banner3_m.jpg" alt="Anook 스탬프 이벤트"></li>
+            </ul>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="commonFrame type1">
+            <section class="pt100">
+                <h2>cafe <strong>Anook</strong> 커피 이야기</h2>
+                <div>
+                    <h3>
+                        한 잔의 커피, <strong>아늑함</strong>을 담다
+                    </h3>
+                    <p>
+                    <strong><b>카페 Anook에서 단순한 커피 이상의 색다른 경험을.</b></strong><br>
+                        한 잔의 커피에 깃든 따뜻함과 아늑한 공간이 하루의 여유를 선사합니다.
+                        차분한 분위기에서 느끼는 깊고 진한 커피 한 모금,
+                        그 속에 담긴 평온함은 일상 속에서 찾은 작은 쉼표와도 같습니다.
+                    </p>
+                </div>
+                <div>
+                    <h3>
+                        <strong>편안함</strong>을 채우는 스페셜티 커피
+                    </h3>
+                    <p>
+                    <strong><b>하루를 특별하게 만들어줄 한 잔의 커피로 아늑한 휴식과 여유를.</b></strong><br>
+                        Anook은 세계 각지에서 엄선한 스페셜티 원두로 깊고 부드러운 풍미를
+                        자랑합니다. 커피 본연의 맛을 살리기 위해 최적의 로스팅 과정을 거쳐
+                        누구나 편안하게 즐길 수 있는 부드럽고 풍성한 맛을 완성했습니다.
+                    </p>
+                </div>
+                <div>
+                    <h3>
+                    <strong>Anook</strong>만의 특별한 레시피
+                    </h3>
+                    <p>
+                    <strong><b>다양한 메뉴로 특별한 즐거움을.</b></strong><br>
+                        Anook Cafe의 바리스타들은 고객 여러분에게 독특한 커피 경험을 전하기 위해
+                        끊임없이 연구합니다. 신선한 재료와 창의적인 레시피로 탄생한 시그니처 음료는 물론, 계절마다 새롭게 선보이는 한정 메뉴까지 즐겨보세요.
+                    </p>
+                </div>
+            </section>
+            <figure class="pc">
+                <img src="./img/cafestory.png" alt="">
+            </figure>
+            <figure class="tab mo">
+                <img src="./img/cafestory_m.png" alt="">
+            </figure>
+        </div>
+        <div class="commonFrame title1">
+            <h2>cafe <strong>Anook</strong> 시그니처</h2>
+            <p>부드러운 풍미와 독특한 조합으로 아늑한 휴식을 선사하는 Anook만의 특별한 시그니처 메뉴</p>
+        </div>
+        <div class="commonFrame desc1">
+            <figure>
+                <img src="./img/menu1.jpg" alt="아늑라떼이미지">
+            </figure>
+            <div class="txt">
+                <h3>아늑라떼 <strong>(Anook Latte)</strong></h3>
+                <p>
+                    부드럽고 크리미한 라떼에 약간의 바닐라와 시나몬을 더해 따뜻하고 포근한 느낌을 주는 음료로, 매일의 시작을 포근하게 만들어주는 아늑한 한 잔 즐겨보세요.
+                </p>
+                <p class="enp">
+                    A smooth and creamy latte infused with a hint of vanilla and cinnamon, offering a warm and cozy experience. This comforting cup is the perfect way to start your day with a touch of warmth and relaxation.
+                </p>
+            </div>
+        </div>
+        <div class="commonFrame desc2">
+            <figure>
+                <img src="./img/menu2.jpg" alt="헤이즐브루 이미지">
+            </figure>
+            <div class="txt">
+                <h3>헤이즐 브루 <strong>(Hazel Brew)</strong></h3>
+                <p>
+                    헤이즐넛의 깊고 풍부한 맛과 고소한 향이 돋보이는 커피. 특히 아이스 헤이즐 브루는 헤이즐넛의 깊은 향을 더욱 시원하게 느낄 수 있는 음료입니다.
+                </p>
+                <p class="enp">
+                    A coffee with a rich, nutty flavor and a bold hazelnut aroma. The Iced Hazel Brew especially highlights the deep notes of hazelnut, delivering a refreshing yet flavorful experience.
+                </p>
+            </div>
+        </div>
+        <div class="commonFrame desc1">
+            <figure>
+                <img src="./img/menu3.jpg" alt="메이플 클라우드 이미지">
+            </figure>
+            <div class="txt">
+                <h3>메이플 클라우드 <strong>(Maple Cloud)</strong></h3>
+                <p>
+                    가을과 겨울에 특히 잘 어울리는 달콤하고 부드러운 메뉴. 메이플 시럽이 가미된 밀크폼을 얹은 카페 라떼로, 구름처럼 부드러운 텍스처가 매력적입니다.
+                </p>
+                <p class="enp">
+                    A sweet and smooth drink, perfect for fall and winter. This maple syrup-infused café latte is topped with velvety milk foam, offering a cloud-like texture that makes it irresistibly cozy.
+                </p>
+            </div>
+        </div>
+    
+        <div class="commonFrame title1">
+            <h2>cafe <strong>Anook</strong> 시그니처</h2>
+            <p>부드러운 풍미와 독특한 조합으로 아늑한 휴식을 선사하는 Anook만의 특별한 시그니처 메뉴</p>
+        </div>
+        <div class="bg">
+            <div class="commonFrame fade">
+                <div class="station3 swiper">
+                    <ul class="train swiper-wrapper">
+                        <li class="swiper-slide"><img src="./img/menu1.jpg" alt="아늑라떼 이미지"></li>
+                        <li class="swiper-slide"><img src="./img/menu2.jpg" alt="헤이즐 브루 이미지"></li>
+                        <li class="swiper-slide"><img src="./img/menu3.jpg" alt="메이플 클라우드 이미지"></li>
+                    </ul>
+                </div>
+                <div class="station4 swiper">
+                    <ul class="train swiper-wrapper">
+                        <li class="swiper-slide">
+                            <div class="fade_txt">
+                                <h3>아늑라떼 <strong>(Anook Latte)</strong></h3>
+                                <p>
+                                    부드럽고 크리미한 라떼에 약간의 바닐라와 시나몬을 더해 따뜻하고 포근한 느낌을 주는 음료로, 매일의 시작을 포근하게 만들어주는 아늑한 한 잔 즐겨보세요.
+                                </p>
+                                <p class="enp">
+                                    A smooth, creamy latte with a touch of vanilla and cinnamon, offering a warm and cozy sensation—a comforting cup to start your day on a serene note.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="fade_txt">
+                                <h3>헤이즐 브루 <strong>(Hazel Brew)</strong></h3>
+                                <p>
+                                    헤이즐넛의 깊고 풍부한 맛과 고소한 향이 돋보이는 커피. 특히 아이스 헤이즐 브루는 헤이즐넛의 깊은 향을 더욱 시원하게 느낄 수 있는 음료입니다.
+                                </p>
+                                <p class="enp">
+                                    A coffee with a rich, nutty flavor and a bold hazelnut aroma. The Iced Hazel Brew especially highlights the deep notes of hazelnut, delivering a refreshing yet flavorful experience.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <div class="fade_txt">
+                                <h3>메이플 클라우드 <strong>(Maple Cloud)</strong></h3>
+                                <p>
+                                    가을과 겨울에 특히 잘 어울리는 달콤하고 부드러운 메뉴. 메이플 시럽이 가미된 밀크폼을 얹은 카페 라떼로, 구름처럼 부드러운 텍스처가 매력적입니다.
+                                </p>
+                                <p class="enp">
+                                    A sweet and smooth drink, perfect for fall and winter. This maple syrup-infused café latte is topped with velvety milk foam, offering a cloud-like texture that makes it irresistibly cozy.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="outerFrame">
+            <div class="commonFrame">
+                <h2>
+                    함께 만들어가는 아늑한 공간<br>Cafe Anook
+                </h2>
+                <p>Anook과 함께해요</p>
+                <p>
+                    카페 Anook은 따뜻한 커피와 아늑한 공간으로 소중한 순간을 나누는 곳입니다. <br> 여러분이 꿈꾸는 카페의 이야기를 함께 만들어가는 여정에 초대합니다.<br>체계적인 지원과 교육을 통해 여러분의 비전을 실현할 수 있도록 함께 하겠습니다. <br> 함께 할 수 있는 그 날을 기다립니다.
+                </p>
+                <div class="direct">
+                    <a href="#" class="btn_common big">창업안내 바로가기</a>
+                    <a href="#" class="btn_common big border">가맹상담 신청</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="commonFrame">
+            <section class="foot1">
+                <ul class="foot_menu">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">위치기반서비스 이용약관</a></li>
+                    <li><a href="#">이메일 무단수집거부</a></li>
+                </ul>
+                <dl class="info">
+                    <dt>대표이사 : </dt>
+                    <dd>서유담</dd>
+                    <dt>개인정보보호책임자 : </dt>
+                    <dd>서유담</dd>
+                    <dt>사업자등록번호 : </dt>
+                    <dd>129-21-011329</dd>
+                    <dt>통신판매업종신고종 : </dt>
+                    <dd>제 2024-테스트-1129호</dd>
+                    <dt>대표이메일 : </dt>
+                    <dd>helpCustomer@anook.co.kr</dd>
+                </dl>
+                <div class="copy">
+                    이 홈페이지는 취업 목적의 포트폴리오용으로 제작되었습니다. designer 서유담
+                </div>
+            </section>
+            <section class="foot2">
+                <ul class="foot_sns">
+                    <li><a href="#"><img src="./img/sns_insta.svg" alt="인스타그램"></a></li>
+                    <li><a href="#"><img src="./img/sns_X.svg" alt="X"></a></li>
+                    <li><a href="#"><img src="./img/sns_youtube.svg" alt="유튜브"></a></li>
+                </ul>
+                <h1 class="foot_logo">
+                    <a href="./index.html">
+                        <img src="./img/logo_light.svg" alt="cafe Anook 하단로고">
+                    </a>
+                </h1>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>
