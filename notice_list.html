@@ -2,160 +2,13 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공지사항</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/variable.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/media.css">
-    <link rel="stylesheet" href="./css/scroll.css">
-    <!-- pretendard -->
-    <link rel="stylesheet" as="style" crossorigin
-        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-    <!-- jQuerry -->
     <script src="./js/jquery-3.7.1.min.js"></script>
-    <script src="./js/header.js"></script>
-    <!-- swiper js -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
-<body>
-    <header class="pc">
-        <div class="commonFrame">
-            <h1 class="logo">
-                <a href="./index.html">
-                    <img src="./img/logo_light.svg" alt="Anook 로고">
-                </a>
-            </h1>
-            <ul class="gnb">
-                <li>
-                    <a href="#">카페 Anook 소개</a>
-                    <ul>
-                        <li><a href="#">카페 Anook</a></li>
-                        <li><a href="#">매장</a></li>
-                        <li><a href="#">브랜드 브로슈어</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="./story_coffee.html">메뉴이야기</a>
-                    <ul>
-                        <li><a href="./story_coffee.html">커피이야기</a></li>
-                        <li><a href="./story_dessert.html">디저트이야기</a></li>
-                        <li><a href="./story_deli.html">델리이야기</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">브랜드 지원</a>
-                    <ul>
-                        <li><a href="#">아눅 페어링 플랜트</a></li>
-                        <li><a href="#">아눅 디저트 플랜트</a></li>
-                        <li><a href="#">C&D센터</a></li>
-                        <li><a href="#">SEP센터</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">가맹점 창업안내</a>
-                    <ul>
-                        <li><a href="#">가맹점 개설안내</a></li>
-                        <li><a href="#">창업설명회</a></li>
-                        <li><a href="#">온라인 창업상담신청</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">가맹점 전용 금융상품</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="./notice_list.html">새소식 & 공지</a>
-                    <ul>
-                        <li><a href="./notice_list.html">공지사항</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <div class="header_mobile mo">
-        <h1 class="logo_mo">
-            <a href="./index.html">
-                <img src="./img/logo_light.svg" alt="카페Anook light 로고">
-            </a>
-        </h1>
-        <span id="btn_gnb">
-            <img src="./img/icn_bar.svg" alt="메뉴 열기 버튼">
-        </span>
-        <div class="hidden_gnb">
-            <div class="hidden_gnb_top">
-                <h1 class="logo_mo">
-                    <a href="./index.html">
-                        <img src="./img/logo.svg" alt="카페Anook light 로고">
-                    </a>
-                </h1>
-                <span id="btn_close_gnb">
-                    <img src="./img/icn_close.svg" alt="메뉴 닫기 버튼">
-                </span>
-            </div>
-            <section class="gnb_mo_wrap">
-                <ul class="gnb_mo">
-                    <li>
-                        <a href="#">카페 Anook 소개</a>
-                        <ul>
-                            <li><a href="#">카페 Anook</a></li>
-                            <li><a href="#">매장</a></li>
-                            <li><a href="#">브랜드 브로슈어</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="./story_coffee.html">메뉴이야기</a>
-                        <ul>
-                            <li><a href="./story_coffee.html">커피이야기</a></li>
-                            <li><a href="./story_dessert.html">디저트이야기</a></li>
-                            <li><a href="./story_deli.html">델리이야기</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">브랜드 지원</a>
-                        <ul>
-                            <li><a href="#">아눅 페어링 플랜트</a></li>
-                            <li><a href="#">아눅 디저트 플랜트</a></li>
-                            <li><a href="#">C&D센터</a></li>
-                            <li><a href="#">SEP센터</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">가맹점 창업안내</a>
-                        <ul>
-                            <li><a href="#">가맹점 개설안내</a></li>
-                            <li><a href="#">창업설명회</a></li>
-                            <li><a href="#">온라인 창업상담신청</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">가맹점 전용 금융상품</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="./notice_list.html">새소식 & 공지</a>
-                        <ul>
-                            <li><a href="./notice_list.html">공지사항</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-            <div class="hidden_gnb_bottom">
-                <a href="#" class="btn_common big">창업안내 바로가기</a>
-                <ul class="sns">
-                    <li><a href="#" target="_blank">
-                            <img src="./img/sns_youtube_color.svg" alt="유튜브">
-                        </a></li>
-                    <li><a href="#" target="_blank">
-                            <img src="./img/sns_insta_color.svg" alt="인스타">
-                        </a></li>
-                    <li><a href="#" target="_blank">
-                            <img src="./img/sns_X_color.svg" alt="X트위터">
-                        </a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
+<body class="admin">
+    <div class="header_wrap"></div>
+
     <main>
         <div class="sub_banner sub1">
             <div class="ban_txt">
@@ -167,51 +20,160 @@
             <section>
                 전체 <strong>25</strong>건 - <strong>1</strong> 페이지
             </section>
-            <section>
+            <section class="option_admin">
                 <a href="#" class="btn_common">선택/삭제</a>
                 <a href="#" class="btn_common">글쓰기</a>
             </section>
         </div>
-    </main>
-    <footer>
-        <div class="commonFrame">
-            <section class="foot1">
-                <ul class="foot_menu">
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">위치기반서비스 이용약관</a></li>
-                    <li><a href="#">이메일 무단수집거부</a></li>
-                </ul>
-                <dl class="info">
-                    <dt>대표이사 : </dt>
-                    <dd>서유담</dd>
-                    <dt>개인정보보호책임자 : </dt>
-                    <dd>서유담</dd>
-                    <dt>사업자등록번호 : </dt>
-                    <dd>129-21-011329</dd>
-                    <dt>통신판매업종신고종 : </dt>
-                    <dd>제 2024-테스트-1129호</dd>
-                    <dt>대표이메일 : </dt>
-                    <dd>helpCustomer@anook.co.kr</dd>
-                </dl>
-                <div class="copy">
-                    이 홈페이지는 취업 목적의 포트폴리오용으로 제작되었습니다. designer 서유담
-                </div>
-            </section>
-            <section class="foot2">
-                <ul class="foot_sns">
-                    <li><a href="#"><img src="./img/sns_insta.svg" alt="인스타그램"></a></li>
-                    <li><a href="#"><img src="./img/sns_X.svg" alt="X"></a></li>
-                    <li><a href="#"><img src="./img/sns_youtube.svg" alt="유튜브"></a></li>
-                </ul>
-                <h1 class="foot_logo">
-                    <a href="./index.html">
-                        <img src="./img/logo_light.svg" alt="cafe Anook 하단로고">
-                    </a>
-                </h1>
-            </section>
+        <form action="" class="commonFrame notice_form">
+            <table class=" list_table">
+                <thead>
+                    <tr>
+                        <th class="cell_admin">
+                            <label for="all">
+                                <input type="checkbox" id="all">
+                                <span class="custom_checkbox"></span>
+                            </label>
+                        </th>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                        <th>날짜</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="fixed_notice">
+                        <td class="cell_admin">
+                            <label for="no25">
+                                <input type="checkbox" id="no25">
+                                <span class="custom_checkbox"></span>
+                            </label>
+                        </td>
+                        <td>❗</td>
+                        <td><a href="#">가을 스페셜 메뉴 출시</a></td>
+                        <td>Anook</td>
+                        <td>2024-10-08</td>
+                    </tr>
+                    <tr class="fixed_notice">
+                        <td class="cell_admin">
+                            <label for="no24">
+                                <input type="checkbox" id="no24">
+                                <span class="custom_checkbox"></span>
+                            </label>
+                        </td>
+                        <td>❗</td>
+                        <td><a href="#">신규 회원 가입 이벤트</a></td>
+                        <td>Anook</td>
+                        <td>2024-10-05</td>
+                    </tr>
+                    <tr>
+                        <td class="cell_admin">
+                            <label for="no23">
+                                <input type="checkbox" id="no23">
+                                <span class="custom_checkbox"></span>
+                            </label>
+                        </td>
+                        <td>23</td>
+                        <td><a href="#">10월 시나몬 츄러스 프로모션 안내</a></td>
+                        <td>Anook</td>
+                        <td>2024-10-01</td>
+                    </tr>
+                    <tr>
+                        <td class="cell_admin">
+                            <label for="no22">
+                                <input type="checkbox" id="no22">
+                                <span class="custom_checkbox"></span>
+                            </label>
+                        </td>
+                        <td>22</td>
+                        <td><a href="#">Anook Cafe 앱 출시 안내</a></td>
+                        <td>Anook</td>
+                        <td>2024-09-28</td>
+                    </tr>
+                    <tr>
+                        <td class="cell_admin">
+                            <label for="no21">
+                                <input type="checkbox" id="no21">
+                                <span class="custom_checkbox"></span>
+                            </label>
+                        </td>
+                        <td>21</td>
+                        <td><a href="#">추석 연휴 영업시간 안내</a></td>
+                        <td>Anook</td>
+                        <td>2024-09-20</td>
+                    </tr>
+                    <tr>
+                        <td class="cell_admin">
+                            <label for="no20">
+                                <input type="checkbox" id="no20">
+                                <span class="custom_checkbox"></span>
+                            </label>
+                        </td>
+                        <td>20</td>
+                        <td><a href="#">스탬프 적립 이벤트 시작</a></td>
+                        <td>Anook</td>
+                        <td>2024-09-15</td>
+                    </tr>
+                    <tr>
+                        <td class="cell_admin">
+                            <label for="no19">
+                                <input type="checkbox" id="no19">
+                                <span class="custom_checkbox"></span>
+                            </label>
+                        </td>
+                        <td>19</td>
+                        <td><a href="#">메뉴 가격 조정 안내</a></td>
+                        <td>Anook</td>
+                        <td>2024-09-10</td>
+                    </tr>
+                    <tr>
+                        <td class="cell_admin">
+                            <label for="no18">
+                                <input type="checkbox" id="no18">
+                                <span class="custom_checkbox"></span>
+                            </label>
+                        </td>
+                        <td>18</td>
+                        <td><a href="#">커피 원두 리뉴얼 소식</a></td>
+                        <td>Anook</td>
+                        <td>2024-09-05</td>
+                    </tr>
+                    <tr>
+                        <td class="cell_admin">
+                            <label for="no17">
+                                <input type="checkbox" id="no17">
+                                <span class="custom_checkbox"></span>
+                            </label>
+                        </td>
+                        <td>17</td>
+                        <td><a href="#">여름 스페셜 음료 종료 안내</a></td>
+                        <td>Anook</td>
+                        <td>2024-08-31</td>
+                    </tr>
+                    <tr>
+                        <td class="cell_admin">
+                            <label for="no16">
+                                <input type="checkbox" id="no16">
+                                <span class="custom_checkbox"></span>
+                            </label>
+                        </td>
+                        <td>16</td>
+                        <td><a href="#">멤버십 할인 혜택 개편 안내</a></td>
+                        <td>Anook</td>
+                        <td>2024-08-25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <div class="commonFrame bbs_pagination">
+            <a href="#" class="on">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
         </div>
-    </footer>
+    </main>
+
+    <footer></footer>
+    <script src="./js/include.js"></script>
 </body>
 
 </html>

@@ -2,8 +2,9 @@ header{
     overflow: hidden;
     height: 5em;
     background-color: var(--main-color);
-    /* border-bottom: 2px solid var(--main-color); */
-    /* color: var(--light-color); */
+    background-blend-mode: overlay;
+    border-bottom: 2px solid var(--main-color);
+    color: var(--light-color);
     position: fixed;
     width: 100%;
     left: 0;
@@ -477,7 +478,87 @@ main{
     margin-top: var(--space-small);
 }
 
+/* 공지사항 */
+
 .optionbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: var(--space-middle) auto;
 }
+
+/* admin */
+.option_admin{
+    display: none;
+}
+.admin .option_admin{
+    display: block;
+}
+.cell_admin{
+    display: none;
+}
+.admin .cell_admin{
+    display: table-cell;
+}
+
+
+.notice_form{
+    /* border: 1px solid lime; */
+    margin-bottom: var(--space-small);
+}
+.list_table{
+    table-layout: fixed;
+    width: 100%;
+
+}
+
+.list_table th{
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 1rem 0;
+}
+.list_table th:last-of-type{
+    width: 15%;
+}
+.list_table th:nth-of-type(4){
+    width: 15%;
+}
+.list_table th:nth-of-type(3){
+    width: 55%;
+}
+.list_table th:nth-of-type(2){
+    width: 7.5%;
+}
+.list_table th:nth-of-type(1){
+    width: 7.5%;
+}
+.list_table td{
+    border-bottom: 1px solid rgb(51, 51, 51, 0.5);
+    text-align: center;
+    padding: 0.9rem 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list_table td a{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list_table td:nth-of-type(3){
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.fixed_notice{
+    background-color: rgba(186, 219, 175, 0.5);
+    color: var(--main-color);
+}
+.fixed_notice a{
+    font-weight: var(--font-bold);
+}
+
+
+

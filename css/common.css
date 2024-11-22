@@ -3,6 +3,7 @@
 html{
     font-family: "Pretendard", Pretendard, -apple-system, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
     font-size: var(--font-size-pc,20px);
+    font-weight: var(--font-medium);
 }
 
 .commonFrame{
@@ -103,4 +104,40 @@ p{
 .enp{
     color: var(--point-color);
     font-weight: var(--font-thin);
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+label{
+    /* border: 1px solid var(--main-color); */
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+}
+.custom_checkbox{
+    border: 1px solid var(--main-color);
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+input[type="checkbox"]:checked+.custom_checkbox{
+    background:#fff url("../img/icn_check.svg")no-repeat 50% 50% / 80% auto;
+}
+
+/* pagination */
+.bbs_pagination{
+    display: flex;
+    justify-content: center;
+    gap: var(--space-small);
+    margin-bottom: var(--space-xlarge);
+}
+.bbs_pagination a{
+    padding: 0.2rem 0.5rem;
+}
+.bbs_pagination a.on{
+    color:var(--main-color);
+    text-decoration: underline;
+    font-weight: var(--font-bold);
 }
