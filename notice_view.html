@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <aside class="fixed_menu"></aside>
+
+    <div class="modal"></div>
+    <div class="popups">
+        <div class="popup_title">
+            이 게시물을 삭제하시겠습니까?
+        </div>
+        <div class="popup_ctl">
+            <span class="btn_common yes" id="btn_delete_yes">
+                예
+            </span>
+            <span class="btn_common white" id="btn_delete_no">
+                아니오
+            </span>
+        </div>
+    </div>
+
+    <div class="header_wrap"></div>
+
+    <main>
+        <div class="sub_banner sub1">
+            <div class="ban_txt">
+                <h2>공지사항</h2>
+                <p>일상을 더 따스하게 채워줄 Anook Cafe의 소식과 특별한 소식과 공지사항을 확인하세요.</p>
+            </div>
+        </div>
+        <h3 class="commonFrame large_margin">가을 스페셜 메뉴 출시</h3>
+        <div class="commonFrame optionbar border_bottom">
+            <section class="view_info">
+                <span>Anook</span>
+                <span>2024-10-08 10:00:29</span>
+                <span>조회수 32</span>
+
+            </section>
+            <section class="option_admin button_list">
+                <a href="#"><img src="/img/button_edit.svg" alt="글 수정"></a>
+                <a href="#" id="btn_delete"><img src="/img/button_delete.svg" alt="글 삭제"></a>
+            </section>
+            </section>
+        </div>
+        <div class="commonFrame view_txt border_bottom sm_bottom">
+            
+        </div>
+        <div class="commonFrame buttons lm_bottom">
+            <a href="/notice_list.html" class="btn_common">목록</a>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script>
+        let btn_delete = document.querySelector("#btn_delete")
+        let modal = document.querySelector(".modal")
+        let popups = document.querySelector(".popups")
+        let btn_delete_yes = document.querySelector("#btn_delete_yes")
+        let btn_delete_no = document.querySelector("#btn_delete_no")
+
+        // 팝업메뉴 나오는 기능
+        btn_delete.addEventListener("click",function(event){
+            event.preventDefault()
+
+            modal.classList.add("on")
+            popups.classList.add("on")
+        })
+        // 삭제 예 눌렀을 때
+        btn_delete_yes.addEventListener("click",function(){
+            modal.classList.remove("on")
+            popups.classList.remove("on")
+        })
+        // 삭제 아니오 눌렀을 때
+            btn_delete_no.addEventListener("click",function(){
+            modal.classList.remove("on")
+            popups.classList.remove("on")
+        })
+    </script>
+    <script src="./js/include.js"></script>
+</body>
+
+</html>

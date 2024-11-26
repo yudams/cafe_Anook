@@ -44,17 +44,19 @@ p{
 
 .btn_common{
     /* 선택한 태그가 a태그 뿐만 아니라 span태그같은 다른 태그가 될 수도 있다 가정 */
-    border: 2px solid var(--inActive-color);
+    border: 1px solid var(--inActive-color);
     color: #000;
     padding: 0.4rem 1rem;
     display: inline-block;
     border-radius: 0.5rem;
+    font-size: .9rem;
+    cursor: pointer;
 }
 
 .btn_common:hover{
     background-color: var(--main-color);
     color: #fff;
-    border: 2px solid var(--main-color);
+    border: 1px solid var(--main-color);
 }
 
 .btn_common.big{
@@ -75,20 +77,20 @@ p{
 .btn_common.big:hover{
     color: var(--sub-color);
     background-color: #153A0A;
-    border: 2px solid #153A0A;
+    border: 1px solid #153A0A;
     
 }
 .btn_common.big.border:hover{
     color: var(--sub-color);
     background-color: transparent;
-    /* border: 2px solid var(--sub-color); */
+    /* border: 1px solid var(--sub-color); */
 }
 
 
 .btn_common:active{
     background-color: transparent;
     color: var(--main-color);
-    border: 2px solid var(--main-color);
+    border: 1px solid var(--main-color);
 }
 
 .btn_common.inactive{
@@ -98,8 +100,22 @@ p{
 }
 .btn_common.white{
     color: #fff;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
 }
+.btn_common.white:hover{
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+}
+.btn_common.yes{
+    color: #fff;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+}
+.btn_common.yes:hover{
+    color: #333;
+    background-color: var(--sub-color);
+}
+
 
 .enp{
     color: var(--point-color);
@@ -109,18 +125,20 @@ p{
 input[type="checkbox"]{
     display: none;
 }
-label{
+label.checkbox{
     /* border: 1px solid var(--main-color); */
-    width: 1rem;
-    height: 1rem;
-    display: inline-block;
+    /* width: 1rem; */
+    /* height: 1rem; */
+    /* inline-flex = flex컨테이너가 inline태그처럼 포함하는 컨텐츠 만큼의 너비를 갖게되는 형태 */
+    display: inline-flex;
+    gap: 0.5rem;
 }
 .custom_checkbox{
     border: 1px solid var(--main-color);
     background-color: #fff;
     display: block;
-    width: 100%;
-    height: 100%;
+    width: 1rem;
+    height: 1rem;
 }
 input[type="checkbox"]:checked+.custom_checkbox{
     background:#fff url("../img/icn_check.svg")no-repeat 50% 50% / 80% auto;
@@ -140,4 +158,10 @@ input[type="checkbox"]:checked+.custom_checkbox{
     color:var(--main-color);
     text-decoration: underline;
     font-weight: var(--font-bold);
+}
+input[type="submit"]{
+    background-color: transparent;
+}
+input[type="reset"]{
+    background-color: transparent;
 }

@@ -13,6 +13,12 @@
         margin: 0 1rem;
         /* border: 1px solid red; */
     }
+    .commonFrame.sm_bottom{
+        margin-bottom: var(--space-small);
+    }
+    .commonFrame.lm_bottom{
+        margin-bottom: var(--space-large);
+    }
     .commonFrame.station5{
         margin: 0 1rem;
     }
@@ -51,7 +57,8 @@
         left: 0;
         width: 100%;
         height: 5rem;
-        background-color: var(--main-color);
+        background-color: rgba(56, 110, 39);
+        /* backdrop-filter: blur(5px); */
         padding: 0 1rem;
         display: flex;
         justify-content: space-between;
@@ -94,7 +101,7 @@
         box-sizing: border-box;
         background-color: #fff;
         transform: translateX(100%);
-        transition: all 0.5s ease 0s;
+        /* transition: all 0.5s ease 0s; */
     }
 
     .hidden_gnb.on {
@@ -282,6 +289,7 @@
     .commonFrame.desc3{
         gap: 1rem;    
     }
+
     .commonFrame.optionbar{
         margin: var(--space-middle) 1rem;
     }
@@ -290,6 +298,14 @@
     }
     .commonFrame.bbs_pagination{
         margin-bottom: var(--space-xlarge);
+    }
+    .commonFrame.form_submit{
+        margin-bottom: var(--space-xlarge);
+    }
+
+    /* list-view 상세페이지 */
+    .commonFrame.large_margin{
+        margin: var(--space-large) 1rem;
     }
 
 }

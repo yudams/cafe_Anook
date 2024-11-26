@@ -6,7 +6,23 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
-<body class="admin">
+<body>
+    <aside class="fixed_menu"></aside>
+
+    <div class="modal"></div>
+    <div class="popups">
+        <div class="popup_title">
+            선택한 항목을 삭제하시겠습니까?
+        </div>
+        <div class="popup_ctl">
+            <span class="btn_common yes" id="btn_delete_yes">
+                예
+            </span>
+            <span class="btn_common white" id="btn_delete_no">
+                아니오
+            </span>
+        </div>
+    </div>
     <div class="header_wrap"></div>
 
     <main>
@@ -21,8 +37,8 @@
                 전체 <strong>25</strong>건 - <strong>1</strong> 페이지
             </section>
             <section class="option_admin">
-                <a href="#" class="btn_common">선택/삭제</a>
-                <a href="#" class="btn_common">글쓰기</a>
+                <a href="#" class="btn_common" id="btn_delete">선택/삭제</a>
+                <a href="/notice_write.html" class="btn_common">글쓰기</a>
             </section>
         </div>
         <form action="" class="commonFrame notice_form">
@@ -30,7 +46,7 @@
                 <thead>
                     <tr>
                         <th class="cell_admin">
-                            <label for="all">
+                            <label for="all" class="checkbox">
                                 <input type="checkbox" id="all">
                                 <span class="custom_checkbox"></span>
                             </label>
@@ -44,121 +60,121 @@
                 <tbody>
                     <tr class="fixed_notice">
                         <td class="cell_admin">
-                            <label for="no25">
+                            <label for="no25" class="checkbox">
                                 <input type="checkbox" id="no25">
                                 <span class="custom_checkbox"></span>
                             </label>
                         </td>
                         <td>❗</td>
-                        <td><a href="#">가을 스페셜 메뉴 출시</a></td>
+                        <td><a href="/notice_view.html">가을 스페셜 메뉴 출시</a></td>
                         <td>Anook</td>
                         <td>2024-10-08</td>
                     </tr>
                     <tr class="fixed_notice">
                         <td class="cell_admin">
-                            <label for="no24">
+                            <label for="no24" class="checkbox">
                                 <input type="checkbox" id="no24">
                                 <span class="custom_checkbox"></span>
                             </label>
                         </td>
                         <td>❗</td>
-                        <td><a href="#">신규 회원 가입 이벤트</a></td>
+                        <td><a href="/notice_view.html">신규 회원 가입 이벤트</a></td>
                         <td>Anook</td>
                         <td>2024-10-05</td>
                     </tr>
                     <tr>
                         <td class="cell_admin">
-                            <label for="no23">
+                            <label for="no23" class="checkbox">
                                 <input type="checkbox" id="no23">
                                 <span class="custom_checkbox"></span>
                             </label>
                         </td>
                         <td>23</td>
-                        <td><a href="#">10월 시나몬 츄러스 프로모션 안내</a></td>
+                        <td><a href="/notice_view.html">10월 시나몬 츄러스 프로모션 안내</a></td>
                         <td>Anook</td>
                         <td>2024-10-01</td>
                     </tr>
                     <tr>
                         <td class="cell_admin">
-                            <label for="no22">
+                            <label for="no22" class="checkbox">
                                 <input type="checkbox" id="no22">
                                 <span class="custom_checkbox"></span>
                             </label>
                         </td>
                         <td>22</td>
-                        <td><a href="#">Anook Cafe 앱 출시 안내</a></td>
+                        <td><a href="/notice_view.html">Anook Cafe 앱 출시 안내</a></td>
                         <td>Anook</td>
                         <td>2024-09-28</td>
                     </tr>
                     <tr>
                         <td class="cell_admin">
-                            <label for="no21">
+                            <label for="no21" class="checkbox">
                                 <input type="checkbox" id="no21">
                                 <span class="custom_checkbox"></span>
                             </label>
                         </td>
                         <td>21</td>
-                        <td><a href="#">추석 연휴 영업시간 안내</a></td>
+                        <td><a href="/notice_view.html">추석 연휴 영업시간 안내</a></td>
                         <td>Anook</td>
                         <td>2024-09-20</td>
                     </tr>
                     <tr>
                         <td class="cell_admin">
-                            <label for="no20">
+                            <label for="no20" class="checkbox">
                                 <input type="checkbox" id="no20">
                                 <span class="custom_checkbox"></span>
                             </label>
                         </td>
                         <td>20</td>
-                        <td><a href="#">스탬프 적립 이벤트 시작</a></td>
+                        <td><a href="/notice_view.html">스탬프 적립 이벤트 시작</a></td>
                         <td>Anook</td>
                         <td>2024-09-15</td>
                     </tr>
                     <tr>
                         <td class="cell_admin">
-                            <label for="no19">
+                            <label for="no19" class="checkbox">
                                 <input type="checkbox" id="no19">
                                 <span class="custom_checkbox"></span>
                             </label>
                         </td>
                         <td>19</td>
-                        <td><a href="#">메뉴 가격 조정 안내</a></td>
+                        <td><a href="/notice_view.html">메뉴 가격 조정 안내</a></td>
                         <td>Anook</td>
                         <td>2024-09-10</td>
                     </tr>
                     <tr>
                         <td class="cell_admin">
-                            <label for="no18">
+                            <label for="no18" class="checkbox">
                                 <input type="checkbox" id="no18">
                                 <span class="custom_checkbox"></span>
                             </label>
                         </td>
                         <td>18</td>
-                        <td><a href="#">커피 원두 리뉴얼 소식</a></td>
+                        <td><a href="/notice_view.html">커피 원두 리뉴얼 소식</a></td>
                         <td>Anook</td>
                         <td>2024-09-05</td>
                     </tr>
                     <tr>
                         <td class="cell_admin">
-                            <label for="no17">
+                            <label for="no17" class="checkbox">
                                 <input type="checkbox" id="no17">
                                 <span class="custom_checkbox"></span>
                             </label>
                         </td>
                         <td>17</td>
-                        <td><a href="#">여름 스페셜 음료 종료 안내</a></td>
+                        <td><a href="/notice_view.html">여름 스페셜 음료 종료 안내</a></td>
                         <td>Anook</td>
                         <td>2024-08-31</td>
                     </tr>
                     <tr>
                         <td class="cell_admin">
-                            <label for="no16">
+                            <label for="no16" class="checkbox">
                                 <input type="checkbox" id="no16">
                                 <span class="custom_checkbox"></span>
                             </label>
                         </td>
                         <td>16</td>
-                        <td><a href="#">멤버십 할인 혜택 개편 안내</a></td>
+                        <td><a href="/notice_view.html">멤버십 할인 혜택 개편 안내</a></td>
                         <td>Anook</td>
                         <td>2024-08-25</td>
                     </tr>
@@ -173,6 +189,31 @@
     </main>
 
     <footer></footer>
+    <script>
+        let btn_delete = document.querySelector("#btn_delete")
+        let modal = document.querySelector(".modal")
+        let popups = document.querySelector(".popups")
+        let btn_delete_yes = document.querySelector("#btn_delete_yes")
+        let btn_delete_no = document.querySelector("#btn_delete_no")
+
+        // 팝업메뉴 나오는 기능
+        btn_delete.addEventListener("click",function(event){
+            event.preventDefault()
+
+            modal.classList.add("on")
+            popups.classList.add("on")
+        })
+        // 삭제 예 눌렀을 때
+        btn_delete_yes.addEventListener("click",function(){
+            modal.classList.remove("on")
+            popups.classList.remove("on")
+        })
+        // 삭제 아니오 눌렀을 때
+            btn_delete_no.addEventListener("click",function(){
+            modal.classList.remove("on")
+            popups.classList.remove("on")
+        })
+    </script>
     <script src="./js/include.js"></script>
 </body>
 
