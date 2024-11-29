@@ -720,3 +720,10 @@ textarea{
     background-color: var(--main-color);
     border-radius: 50%;
 }
+
+.brand_story{
+    display: flex;
+}
+.brand_story>h3{
+    margin: var(--space-large)!important;
+}
