@@ -39,6 +39,11 @@ p{
     line-height: 1.4;
 }
 
+p.big{
+    font-size: 1.1rem;
+    font-weight: var(--font-bold);
+}
+
 
 /* button */
 

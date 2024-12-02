@@ -720,10 +720,161 @@ textarea{
     background-color: var(--main-color);
     border-radius: 50%;
 }
+.title_intro{
+    text-align: center;
+    margin-top:var(--space-xlarge)!important;
+    margin-bottom:var(--space-large)!important;
+}
 
-.brand_story{
+.intro .title_intro{
+    text-align: left;
+}
+.intro .commonFrame.desc1{
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: var(--space-xlarge);
+}
+
+.intro .commonFrame.desc1>figure{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.brand_story>h3{
-    margin: var(--space-large)!important;
+
+.intro .commonFrame.desc1 .brnad_logo{
+    height: 9.5rem;
 }
+
+.desc1_left>*{
+    margin-bottom: var(--space-small);
+}
+.intro .commonFrame.desc2{
+    align-items: flex-end;
+    gap: 3rem;
+    margin-bottom: var(--space-xlarge);
+}
+
+.intro .commonFrame.desc2>figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro .commonFrame.desc2 .brnad_logo{
+    height: 9.5rem;
+}
+
+.desc2_left>*{
+    margin-bottom: var(--space-small);
+}
+
+/* 브랜드 지원 */
+
+
+.support .commonFrame.desc1{
+    align-items: flex-end;
+}
+
+.commonFrame.desc1>*.fr15{
+    flex: 1.5;
+}
+
+.txt p:last-child{
+    margin-bottom: 0;
+}
+
+.desc1_right img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.desc5 .txt{
+    text-align: center;
+    margin-bottom:var(--space-middle);
+}
+.desc5 .txt>*{
+    margin-bottom:var(--space-middle);
+}
+.desc5 .txt>*:last-child{
+    margin-bottom:0;
+}
+.desc5 figure ul{
+    display: flex;
+    gap: 1rem;
+}
+.desc5 figure li{
+    flex:1;
+}
+/* .desc5 figure li img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+} */
+
+.desc5>img{
+    height: 15rem;
+    width: 100%;
+    object-fit: cover;
+}
+.desc1_right{
+    width: 26rem;
+    height: 46rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.desc6{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: var(--space-xlarge);
+    margin-top: var(--space-large);
+
+}
+.desc6>figure{
+    width: 15rem;
+    object-fit: cover;
+
+}
+.desc6>figure>img{
+    height: 100%;
+    object-fit: cover;
+
+}
+.desc6 .txt>*{
+    margin-bottom: var(--space-middle);
+}
+.desc6 .txt>*:last-child{
+    margin-bottom: 0;
+}
+
+.desc6>.fr15{
+    flex: 1.5;
+}
+
+.pairing_img>ul{
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+.pairing_img img{
+    object-fit: cover;
+    width: 100%;
+}
+.pairing_img>ul{
+    object-fit: cover;
+    overflow: hidden;
+}
+.pairing_img>ul>li{
+    flex: 2;
+}
+
