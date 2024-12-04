@@ -170,3 +170,17 @@ input[type="submit"]{
 input[type="reset"]{
     background-color: transparent;
 }
+
+/* table */
+input[type="text"]{
+    padding: .4rem .5rem;
+    border-radius: 0;
+    border: 1px solid var(--inActive-color);
+    max-width: 6rem;
+}
+select{
+    padding: .4rem .5rem;
+    border-radius: 0;
+    max-width: 6rem;
+    outline: 0;
+}

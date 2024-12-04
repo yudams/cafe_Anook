@@ -487,6 +487,7 @@ footer .commonFrame{
     url("../img/sub_ban2.jpg") no-repeat 50% 20% / cover;
     background-blend-mode: multiply;
 }
+
 .ban_txt p{
     margin-top: var(--space-small);
 }
@@ -730,7 +731,7 @@ textarea{
     text-align: left;
 }
 .intro .commonFrame.desc1{
-    align-items: center;
+    align-items: flex-end;
     gap: 3rem;
     margin-bottom: var(--space-xlarge);
 }
@@ -869,6 +870,7 @@ textarea{
 .pairing_img img{
     object-fit: cover;
     width: 100%;
+    transform: translateY(-120px);
 }
 .pairing_img>ul{
     object-fit: cover;
@@ -878,3 +880,71 @@ textarea{
     flex: 2;
 }
 
+/* 가맹점 창업안내 */
+.sub3{
+    background:
+    linear-gradient(0deg,var(--dark-color),rgba(0, 0, 0, 0.2)),
+    url("../img/sub_ban3.jpg") no-repeat 20% 50% / cover;
+    background-blend-mode: multiply;
+}
+
+.consulting_form{
+    margin-top: var(--space-xlarge);
+    margin-bottom: var(--space-large);
+    padding-top: var(--space-large);
+}
+.consulting1{
+    margin-bottom: var(--space-large);
+}
+.consulting1>*{
+    margin-bottom: var(--space-small);
+}
+
+.consulting1>*:last-child{
+    margin-bottom: 0;
+}
+
+.consulting1>h3{
+    margin: var(--space-middle) 0;
+}
+
+.terms{
+    border: 1px solid var(--inActive-color);
+    padding: 1rem;
+    white-space: pre-wrap;
+}
+
+.consulting2>*{
+    margin-bottom: var(--space-small);
+}
+
+.consulting2>*:last-child{
+    margin-bottom: 0;
+}
+
+.consulting2>h3{
+    margin: var(--space-middle) 0;
+}
+
+/* table */
+.consulting2 table{
+    width: 100%;
+}
+.consulting2 table th{
+    text-align: left;
+    width: 15%;
+    
+}
+.consulting2 table tr{
+    height: 3rem;
+}
+
+.submit{
+    border-top: 2px solid var(--inActive-color);
+    padding-top: var(--space-small);
+}
+
+p.small{
+    font-size: .9rem;
+    font-weight: var(--font-thin);
+}

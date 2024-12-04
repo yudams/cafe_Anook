@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body>
+    <aside class="fixed_menu"></aside>
+    <div class="header_wrap"></div>
+
+    <main>
+        <div class="sub_banner sub3">
+            <div class="ban_txt">
+                <h2>가맹점 창업안내</h2>
+                <p>Anook와 함께 커피의 가치를 나누고, 성공적인 창업의 시작을 만들어보세요.</p>
+            </div>
+        </div>
+        <form action="#" class="consulting_form">
+            <div class="commonFrame consulting1 lm_bottom">
+                <h2>온라인 창업상담 신청</h2>
+                <h3>온라인 창업상담 신청 개인정보 수집 및 이용 동의</h3>
+                <div class="terms">개인정보 수집 및 이용 동의
+온라인 상담 접수 및 처리를 위한 개인정보 수집 및 이용 동의
+개인정보의 수집 및 이용 목적
+가맹점 개설에 관한 상담 서비스 이용을 위한 본인 식별
+상담내용전달, 점포오픈 관련 정보 안내, 의사 소통 경로 확보
+수집하는 개인 정보 항목
+성명, 생년월일, 이메일주소, 휴대전화번호, 전화번호, 점포주소, CI
+개인정보의 보유 및 이용시간
+전자상거래 등의 소비자 보호에 관한 법률에 따라 3년간 보유
+※ 귀하는 개인정보 수집 및 이용 동의에 거부할 권리가 있으며, 동의 거부 시 온라인 창업상담 신청 서비스를 이용하실 수 없습니다.</div>
+                <div class="agree_box">
+                    <label for="agree" class="checkbox">
+                        <input type="checkbox" id="agree">
+                        <span class="custom_checkbox"></span>
+                        위와 같이 개인정보 수집 및 이용하는데 동의합니다.
+                    </label>
+                </div>
+            </div>
+            <div class="commonFrame consulting2">
+                <h2>창업 희망자 정보</h2>
+                <h3>창업 희망 상담에 필요한 정보를 입력해주세요.</h3>
+                <table>
+                    <tr>
+                        <th><label for="username">이름</label></th>
+                        <td><input type="text" id="username"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="userEmail">이메일</label></th>
+                        <td>
+                            <input type="text" id="userEmail">
+                            @
+                            <select>
+                                <option value="#">선택</option>
+                                <option value="#">gmail.com</option>
+                                <option value="#">naver.com</option>
+                                <option value="#">daum.net</option>
+                                <option value="#">kakao.com</option>
+                                <option value="#">nate.com</option>
+                                <option value="#">직접입력</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="userCp">연락처</label></th>
+                        <td>
+                            <select id="userCp">
+                                <option value="#">010</option>
+                                <option value="#">011</option>
+                                <option value="#">016</option>
+                                <option value="#">018</option>
+                                <option value="#">019</option>
+                                <option value="#">017</option>
+                            </select>
+                            <input type="text">
+                            <p class="small">연락 가능한 번호를 입력하여 주세요.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="userTime">연락 가능시간</label></th>
+                        <td><input type="text" id="userTime"></td>
+
+                    </tr>
+                </table>
+                <div class="submit">
+                    <button type="submit" class="btn_common yes">상담 신청</button>
+                    <a href="/index.html" class="btn_common">취소</a>
+                </div>
+            </div>
+        </form>
+
+    </main>
+
+    <footer></footer>
+    <script src="./js/include.js"></script>
+</body>
+
+</html>
